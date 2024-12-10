@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Metal+Mania&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="particles-js"></div>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+    <div class="audio-container">
+        <audio id="bg-music" autoplay loop>
+        <source src="/assets/music.mp3" type="audio/mp3">
+    </audio>
+        <button id="stop-music">Stop Music</button>
+    </div>
+
+    <script>
+        const audio = document.getElementById('bg-music');
+        const stopButton = document.getElementById('stop-music');
+        stopButton.textContent = audio.paused ? "Play Music" : "Pause Music";
+        stopButton.addEventListener('click', () => {
+            if (audio.paused) {
+                audio.play();
+                stopButton.textContent = "Stop Music";
+            } else {
+                audio.pause();
+                stopButton.textContent = "Resume Music"; // Pause the music when the button is clicked
+            }
+        });
+    </script>
+    <!-------------Header---------------->
+    <div id="Header"><span>Welcome to Year End Binge</span></div>
+    <!-- Information -->
+    <div id="header-info">
+        <div class="marq-container">
+            <div class="marq">Dowload The Brave Browser &nbsp;&nbsp;&nbsp;&nbsp;<img src="brave-browser-icon.svg" style="height: 25px; width: 25px; vertical-align:middle;position: absolute;top:18px;left:180px;">&nbsp;&nbsp;&nbsp;(or) install the chrome extention to avoid
+                the pop up ADS <img src="ad-blocker.png" style="height: 25px; width: 25px; vertical-align:middle;position: absolute;top:18px;left:575px;"></div>
+        </div>
+    </div>
+    <!-- miscellaneous -->
+    <!-- sections -->
+    <div class="section1">
+        <div class="section1-container">
+            <p>MOVIES & TV SHOWS</p>
+            <div class="bx">
+                <div class="bx1">
+                    <img src="assets\Top-10-Movies\VidBinge.webp" onclick="window.open('https://www.vidbinge.com','_blank')" alt="Bethelehen-Img">
+                </div>
+                <div class="bx1">
+                    <img src="assets\Top-10-Movies\Novafork.webp" onclick="window.open('https://novafork.com/','_blank')" alt="Bethelehen-Img">
+                </div>
+                <div class="bx1">
+                    <img src="assets\Top-10-Movies\PopCorn Movies.png" onclick="window.open('https://www.popcornmovies.to/home','_blank')" alt="Bethelehen-Img">
+                </div>
+                <div class="bx1">
+                    <img src="assets\Top-10-Movies\Rar to repu.webp" onclick="window.open('https://nepu.to/','_blank')" alt="Bethelehen-Img">
+                </div>
+                <div class="bx1">
+                    <img src="assets\Top-10-Movies\Bro Flix.webp" onclick="window.open('https://broflix.cc/','_blank')" alt="Bethelehen-Img">
+                </div>
+                <div class="bx1">
+                    <img src="assets\Top-10-Movies\Freek.webp" onclick="window.open('https://freek.to/','_blank')" alt="Bethelehen-Img">
+                </div>
+                <div class="bx1">
+                    <img src="assets\Top-10-Movies\Cineby.webp" onclick="window.open('https://www.cineby.ru/','_blank')" alt="Bethelehen-Img">
+                </div>
+                <div class="bx1">
+                    <img src="assets\Top-10-Movies\HdLW81723624024.webp" onclick="window.open('https://rivestream.live/','_blank')" alt="Bethelehen-Img">
+                </div>
+                <div class="bx1">
+                    <img src="assets\Top-10-Movies\FMovies_logo.png.webp" onclick="window.open('https://fmovies-hd.to/home/','_blank')" alt="Bethelehen-Img">
+                </div>
+                <div class="bx1">
+                    <img src="assets\Top-10-Movies\logo (1).png" onclick="window.open('https://flixwave.watch/home/','_blank')" alt="Bethelehen-Img">
+                </div>
+                <div class="bx1">
+                    <img src="assets\Top-10-Movies\logo (2).png" onclick="window.open('https://bflix.sh/home/','_blank')" alt="Bethelehen-Img">
+                </div>
+                <div class="bx1">
+                    <img src="assets\Top-10-Movies\embed-logo.png" onclick="window.open('https://www.faragski.com','_blank')" alt="Bethelehen-Img">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ANIMES SECTION -->
+    <div class="section1">
+        <div class="section1-container">
+            <p>ANIMES</p>
+            <div class="bx">
+                <div class="bx1">
+                    <img src="assets\Anime\animetsu.webp" onclick="window.open('https://animetsu.cc/','_blank')" alt="Bethelehen-Img">
+                </div>
+                <div class="bx1">
+                    <img src="assets\Anime\Hianime.png" onclick="window.open('https://hianime.to/home','_blank')" alt="Bethelehen-Img">
+                </div>
+                <div class="bx1">
+                    <img src="assets\Anime\kaido.png" onclick="window.open('https://kaido.to/home','_blank')" alt="Bethelehen-Img">
+                </div>
+                <div class="bx1">
+                    <img src="assets\Anime\R.webp" onclick="window.open('https://rivekun.rivestream.live/','_blank')" alt="Bethelehen-Img">
+                </div>
+                <div class="bx1">
+                    <img src="assets\Anime\yukiwatch.webp" onclick="window.open('https://yukiwatch.su/home','_blank')" alt="Bethelehen-Img">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- MANGAS SECTION -->
+    <div class="section1">
+        <div class="section1-container">
+            <p>MANGAS</p>
+            <div class="bx">
+                <div class="bx1">
+                    <img src="assets\Mangas\manga.webp" onclick="window.open('https://mangadex.org','_blank')" alt="MangaDex Logo">
+                </div>
+                <div class="bx1">
+                    <img src="assets\Mangas\comick.webp" onclick="window.open('https://comick.io/home2','_blank')" alt="Comick Logo">
+                </div>
+                <div class="bx1">
+                    <img src="assets\Mangas\mangareader.png" onclick="window.open('https://mangareader.to/home','_blank')" alt="MangaReader Logo">
+                </div>
+                <div class="bx1">
+                    <img src="assets\Mangas\aniligs.png" onclick="window.open('https://agscomics.com','_blank')" alt="agscomics Logo">
+                </div>
+                <div class="bx1">
+                    <img src="assets\Mangas\logo (2).png" onclick="window.open('https://mangafire.to/home','_blank')" alt="mangafire Logo">
+                </div>
+                <div class="bx1">
+                    <img src="assets\Mangas\allmanga.webp" onclick="window.open('https://allmanga.to/manga?cty=ALL','_blank')" alt="AllManga Logo">
+                </div>
+                <div class="bx1">
+                    <img src="assets\Mangas\logo (4).png" onclick="window.open('https://mangakakalot.com','_blank')" alt="MangaKakalot Logo">
+                </div>
+                <div class="bx1">
+                    <img src="assets\Mangas\logo.webp" onclick="window.open('https://asuracomic.net','_blank')" alt="Asuracomic Logo">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- LIVE-TV  SECTION-->
+    <div class="section1">
+        <div class="section1-container">
+            <p>LIVE TV SECTION</p>
+            <div class="bx">
+                <div class="bx1">
+                    <img src="assets\LIVETV\tvhub-logo.png" onclick="window.open('https://www.tvhub.in/tamil/','_blank')" alt="-Img">
+                </div>
+                <div class="bx1">
+                    <img src="assets\LIVETV\logo.png" onclick="window.open('https://www.sunnxt.com/','_blank')" alt="Bethelehen-Img">
+                </div>
+                <div class="bx1">
+                    <img src="assets\LIVETV\polimertv-white (2).png" onclick="window.open('https://www.youtube.com/c/PolimerNews/live','_blank')" alt="Bethelehen-Img">
+                </div>
+                <div class="bx1">
+                    <img src="assets\LIVETV\yupptv_white.svg" onclick="window.open('https://www.yupptv.com/livetv','_blank')" alt="Bethelehen-Img">
+                </div>
+                <div class="bx1">
+                    <img src="assets\LIVETV\logo-1.webp" onclick="window.open('https://www.bing.com/ck/a?!&&p=45ba301722618c206d547693eeb77b0e1633492243925e4939f9611879c7a1ceJmltdHM9MTczMzYxNjAwMA&ptn=3&ver=2&hsh=4&fclid=0a0342cf-04ff-659f-338b-502905526412&psq=tv247%2cus&u=a1aHR0cHM6Ly91c2F0dmdvLmxpdmUv&ntb=1','_blank')"
+                        alt="Bethelehen-Img">
+                </div>
+                <div class="bx1">
+                    <img src="assets\LIVETV\usa.webp" onclick="window.open('https://usatvgo.live/','_blank')" alt="Bethelehen-Img">
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- PAID MOVIES AND SHOWS -->
+    <div class="section1">
+        <div class="section1-container">
+            <p>PAID MOVEIS & TV SHOWS</p>
+            <div class="bx">
+                <div class="bx1">
+                    <img src="assets\paidshows\Logonetflix.png" onclick="window.open('https://www.netflix.com','_blank')" alt="Netflix">
+                </div>
+                <div class="bx1">
+                    <img src="assets\paidshows\disney.png" onclick="window.open('https://www.hotstar.com/in/home','_blank')" alt="Disney+">
+                </div>
+                <div class="bx1">
+                    <img src="assets\paidshows\Max_logo.svg.png" onclick="window.open('https://www.max.com/geo-availability','_blank')" alt="MAX">
+                </div>
+                <div class="bx1">
+                    <img src="assets\paidshows\+.png" onclick="window.open('https://www.apple.com','_blank')" alt="AppleTv+">
+                </div>
+                <div class="bx1">
+                    <img src="assets\paidshows\Amazon-Prime-Video-Logo.png" onclick="window.open('https://www.primevideo.com/','_blank')" alt="AmazonPrime">
+                </div>
+                <div class="bx1">
+                    <img src="assets\paidshows\Crunchyroll.svg.webp" onclick="window.open('https://www.crunchyroll.com','_blank')" alt="CrunchyRoll">
+                </div>
+            </div>
+        </div>
+        <!-- Disclaimer -->
+    </div>
+
+    <div class="disclaimer">Enjoy and Be Responsible</div>
+    <div class="claim">Disclosure: I do not own or host any of the content from these sites. This page simply provides links. None of the content is hosted or contained on this page; it serves purely as a text-based reference.</div>
+</body>
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2024 bingNjoy All Rights Reserved.</p>
+        <ul class="social-links">
+
+            <li>Go to -> <a href="https://dislcaimer-bing-n-joy.vercel.app/">Disclaimer page</a></li>
+        </ul>
+    </div>
+</footer>
+
+
+</html>

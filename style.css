@@ -1,0 +1,347 @@
+/* Reset body margins and padding */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('bethlehem.jpg') no-repeat center center fixed;
+    background-size: cover;
+    cursor: url('christmas truck back.svg'), pointer;
+}
+
+
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+.creepster-regular {
+    font-family: 'Creepster', Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.metal-mania-regular {
+    font-family: "Metal Mania", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* Full-page image styling */
+
+
+/* img {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+} */
+
+
+/* Header styling */
+
+#Header {
+    height: 50px;
+    width: 500px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 4px dotted orangered;
+    z-index: 1;
+    font-family: 'Creepster', Arial, sans-serif;
+    text-align: center;
+    color: orangered;
+    font-size: 40px;
+    margin-left: calc(50% - 250px);
+    line-height: 50px;
+    position: relative;
+    border-image: repeating-linear-gradient(45deg, rgb(255, 0, 93), rgb(255, 0, 0) 10px, transparent 10px, transparent 20px) 1;
+    animation: dash-move 1s linear infinite;
+}
+
+
+/* Keyframes for moving dashes */
+
+@keyframes dash-move {
+    0% {
+        border-image-slice: 1;
+        border-image-width: 1px;
+        border-image-outset: 0;
+        border-image-repeat: repeat;
+        border-image-source: repeating-linear-gradient( 360deg, rgb(192, 0, 0), rgb(41, 205, 0) 10px, transparent 10px, transparent 20px);
+        border-image: 10% repeating-linear-gradient( 45deg, orangered, orangered 10px, transparent 10px, transparent 20px);
+    }
+}
+
+
+/* header News */
+
+#header-info {
+    height: 60px;
+    width: 600px;
+    background-color: rgba(13, 10, 10, 0.8);
+    border: 3px ridge;
+    border-color: rgb(255, 85, 0);
+    position: relative;
+    margin: 20px auto;
+    text-align: center;
+    font-family: 'Metal Mania', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 60px;
+}
+
+.marq {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll-left 30s linear infinite;
+}
+
+
+/* Marquee container */
+
+.marq-container {
+    width: 100%;
+    overflow: hidden;
+    /* Restrict marquee scrolling to within the container */
+    position: relative;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.marq img {
+    height: 100px;
+}
+
+
+/* <section> 1*/
+
+.section1 {
+    height: auto;
+    max-width: 50%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    margin: 90px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: url('assets\snow.png');
+}
+
+
+/* section animation */
+
+.section1:hover {
+    height: auto;
+    width: 60%;
+    margin: 80px auto;
+    transition: transform 0.5s ease-in;
+    transition: transform 0.5s ease-out;
+    transform: scale(1.1);
+    border: 1px ridge;
+    border-image: repeating-conic-gradient(45deg, rgb(255, 0, 93), rgb(255, 0, 0), rgb(212, 255, 0), rgb(0, 110, 255), rgb(0, 123, 14), rgb(0, 110, 255), 10px, transparent 10px, transparent 20px) 1;
+    animation: dash-move1 10s linear infinite;
+}
+
+@keyframes dash-move1 {
+    0% {
+        border-image-slice: 10;
+        border-image-width: 2px;
+        border-image-outset: 0;
+        border-image-repeat: repeat;
+        border-image-source: repeating-linear-gradient( 360deg, rgb(192, 0, 0), rgb(41, 205, 0) 10px, transparent 10px, transparent 20px);
+        border-image: 10% repeating-linear-gradient( 45deg, rgb(20, 48, 255), rgb(0, 255, 85) 10px, transparent 10px, transparent 20px);
+    }
+}
+
+
+/* section animation */
+
+.section1-container p {
+    font-size: 38px;
+    text-align: center;
+    line-height: 1.5;
+    font-family: 'Creepster', Arial, sans-serif;
+    color: firebrick;
+    text-shadow: 0 0 10px rgba(179, 0, 0, 0.7), 0 0 20px rgba(179, 0, 0, 0.5), 0 0 30px rgba(179, 0, 0, 0.4);
+}
+
+.bx1 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 0, 0);
+    margin: 10px;
+    display: flex;
+    border-radius: 10px 42px 32px;
+    border: 1px ridge orangered;
+    cursor: url('Santa hat 03.svg'), pointer;
+}
+
+.bx1:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px 10px rgba(255, 69, 0, 0.5);
+}
+
+.bx {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.bx1 img {
+    width: 100%;
+    /* Scale the image to fit the width of the container */
+    height: auto;
+    /* Maintain aspect ratio */
+    object-fit: contain;
+    /* Ensure the image fits without being cropped */
+    border-radius: inherit;
+}
+
+
+/* responsive for section - 1*/
+
+@media screen and (max-width:400px) {
+    .section1 {
+        height: 800px;
+    }
+}
+
+
+/* Stop Button */
+
+#stop-music {
+    border: 2px solid orangered;
+    border-radius: 10px;
+    font-weight: 300;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: orangered;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+#stop-music:hover {
+    background-color: rgb(198, 106, 0);
+    color: white;
+}
+
+
+/* snowfall */
+
+
+/* Ensure particles span the whole viewport */
+
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200vh;
+    height: 200vh;
+    z-index: -1;
+    /* This ensures particles appear behind your content */
+}
+
+
+/* Footer */
+
+footer {
+    background-color: rgb(0, 0, 0, 0.9);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    overflow: hidden;
+    margin: 0px auto;
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+}
+
+.social-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+
+/* Disclaimer */
+
+.disclaimer {
+    text-align: center;
+    padding: 20px;
+    height: auto;
+    width: 20%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: orangered;
+    text-shadow: 0 0 10px rgba(179, 0, 0, 0.7), 0 0 20px rgba(179, 0, 0, 0.5), 0 0 30px rgba(179, 0, 0, 0.4);
+    border-radius: 50px;
+    border: 4px dotted;
+    margin: 90px auto;
+    line-height: 30px;
+}
+
+.disclaimer {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'Creepster', Arial, sans-serif;
+}
+
+.claim {
+    font-size: 2rem;
+    color: #555;
+    height: auto;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 10px rgba(179, 0, 0, 0.7), 0 0 20px rgba(179, 0, 0, 0.5), 0 0 30px rgba(179, 0, 0, 0.4);
+    border-radius: 10px;
+    border: 4px double;
+    overflow: hidden;
+    margin: 90px auto;
+    text-align: center;
+    font-family: 'Creepster', Arial, sans-serif;
+}
+
+@media (max-width: 500px) {
+    .disclaimer {
+        font-size: 1.2rem;
+    }
+    .claim {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .disclaimer {
+        font-size: 1rem;
+    }
+    .claim {
+        font-size: 0.8rem;
+    }
+}
